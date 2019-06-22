@@ -1,8 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 const path = require('path');
+
+const data= require('./src/data');
 
 module.exports = {
     entry: {
@@ -19,7 +20,8 @@ module.exports = {
                     {
                         loader: 'pug-html-loader',
                         options: {
-                            pretty: true
+                            pretty: true,
+                            data,
                         }
                     },
                 ]
@@ -32,6 +34,15 @@ module.exports = {
                         options: {},
                     },
                     'css-loader',
+                ],
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {},
+                    },
                 ],
             },
         ]

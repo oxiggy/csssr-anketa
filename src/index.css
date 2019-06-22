@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background: #797979;
+    color: #3d3d3d;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body > div {
+    background: url(images/background.png);
+}

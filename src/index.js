@@ -1,1 +1,1 @@
-console.log('Hello!')
+require('./index.css')
