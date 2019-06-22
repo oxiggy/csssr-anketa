@@ -5,6 +5,28 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-body > div {
+.b-page {
+    box-sizing: border-box;
     background: url(images/background.png);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 72px 120px 68px 112px;
+}
+
+.b-header {
+    position: relative;
+}
+.b-header__stamp {
+    position: absolute;
+    top: -14px;
+    right: -64px;
+}
+.b-header__title {
+    margin: 36px 0;
+    padding-right: 36px;
+
+}
+.b-header__title-image {
+    display: block;
+    margin: 0 auto 0;
 }
