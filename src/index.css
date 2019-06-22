@@ -30,3 +30,27 @@ body {
     display: block;
     margin: 0 auto 0;
 }
+
+.b-field {
+    display: flex;
+    align-items: flex-end;
+    height: 62px;
+}
+.b-field__label {
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.b-field__input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    line-height: 42px;
+    padding-left: 12px;
+    font-family: 'Courier New', serif;
+    font-size: 30px;
+    background: transparent;
+    border: 0;
+    border-bottom: 4px solid transparent;
+    border-image: url(./images/border.png) 0 0 4 0/0 0 4px 0 repeat;
+}
