@@ -121,3 +121,43 @@ body {
 .b-checkbox__input:checked + .b-checkbox__label::before {
     background: url(./images/checkbox-checked.png);
 }
+
+.b-radio-list {
+    margin: 10px 0 0;
+    padding: 0;
+}
+.b-radio {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: flex-start;
+    height: 35px;
+    margin-right: 18px;
+    padding-top: 5px;
+}
+.b-radio__input {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+.b-radio__label {
+    position: relative;
+    padding-left: 32px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+.b-radio__label::before {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    display: inline-block;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: url(./images/radio.png);
+    background-repeat: no-repeat;
+}
+.b-radio__input:checked + .b-radio__label::before {
+    background-image: url(./images/radio-checked.png);
+}
