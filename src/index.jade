@@ -49,6 +49,18 @@ html(lang='ru')
                                     input.b-checkbox__input(type='checkbox' checked=item.checked)
                                     span.b-checkbox__label !{item.label}
 
+                section.b-section.b-section_level
+                    h2.b-section__title Уровень владения JavaScript
+                    .b-range
+                        .b-range__slider
+                            .b-range__input-container
+                                input.b-range__input(type='range' min='0' max='100' value=level step='0.5')
+                        .b-range__options
+                            .b-range__option(style='width:19.5%') Не владею
+                            .b-range__option(style='width:29%') Использую готовые решения
+                            .b-range__option(style='width:225px') Использую готовые решения и умею их переделывать
+                            .b-range__option(style='') Пишу сложный JS с нуля
+
                 section.b-section.b-section_words
                     h2.b-section__title Расскажите о себе словами
                     p.b-section__text Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.

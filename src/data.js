@@ -6,6 +6,7 @@ module.exports= {
     email: 'ivanov@gmail.com',
     date: '11.06.2019',
     about: 'Ну-ууу-уу... Ээээ...',
+    level: 19.5,
     skills: [
         { label: 'БЭМ/OOCSS', checked: true },
         { label: 'Pug (Jade)', checked: true },
