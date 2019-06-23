@@ -122,6 +122,17 @@ body {
     background: url(./images/checkbox-checked.png);
 }
 
+.b-textarea {
+    resize: none;
+    width: 100%;
+    padding: 0;
+    background: url(./images/textarea-background.png);
+    line-height: 60px;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    border: 0;
+}
+
 .b-radio-list {
     margin: 10px 0 0;
     padding: 0;

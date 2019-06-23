@@ -19,5 +19,8 @@
     "pug-html-loader": "^1.1.5",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {
+    "autosize": "^4.0.2"
   }
 }
