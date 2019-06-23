@@ -54,6 +54,10 @@ body {
     border-bottom: 4px solid transparent;
     border-image: url(./images/border.png) 0 0 4 0/0 0 4px 0 repeat;
 }
+.b-field__input:focus {
+    outline: 0;
+    opacity: 0.62;
+}
 
 .b-section {
     margin: 0;
@@ -121,6 +125,9 @@ body {
 .b-checkbox__input:checked + .b-checkbox__label::before {
     background: url(./images/checkbox-checked.png);
 }
+.b-checkbox__input:focus + .b-checkbox__label {
+    opacity: 0.62;
+}
 
 .b-range {
 
@@ -160,6 +167,9 @@ body {
     cursor: pointer;
     background: url(images/range-handle.png);
 }
+.b-range__input:focus + .rangeslider .rangeslider__handle {
+    opacity: 0.62;
+}
 .b-range__options {
     display: flex;
     margin-top: -3px;
@@ -194,6 +204,10 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 30px;
     border: 0;
+}
+.b-textarea:focus {
+    outline: 0;
+    opacity: 0.62;
 }
 
 .b-radio-list {
@@ -234,4 +248,7 @@ body {
 }
 .b-radio__input:checked + .b-radio__label::before {
     background-image: url(./images/radio-checked.png);
+}
+.b-radio__input:focus + .b-radio__label {
+    opacity: 0.62;
 }
