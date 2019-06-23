@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "autosize": "^4.0.2",
-    "rangeslider-js": "^3.2.5"
+    "jquery": "^3.4.1",
+    "rangeslider.js": "^2.3.2"
   }
 }
