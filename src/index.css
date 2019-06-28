@@ -8,6 +8,7 @@ body {
 .b-page {
     box-sizing: border-box;
     background: url(images/background.png);
+    background-position: 0 -10px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 62px 23px 62px 17px;
@@ -51,12 +52,13 @@ body {
 .b-field {
     display: flex;
     align-items: flex-end;
-    height: 62px;
+    height: 60px;
 }
 .b-field__label {
     font-size: 22px;
     font-weight: bold;
     padding-right: 20px;
+    color: #2f1b15;
 }
 .b-field__input {
     box-sizing: border-box;
