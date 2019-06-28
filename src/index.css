@@ -139,7 +139,6 @@ body {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
-
 }
 .b-checkbox__label::before {
     position: absolute;
@@ -158,8 +157,6 @@ body {
     opacity: 0.62;
 }
 
-
-
 .b-range {
 
 }
@@ -174,8 +171,9 @@ body {
     position: relative;
     display: block;
     cursor: pointer;
-    height: 25px;
+    height: 43px;
     width: 100%;
+    margin-bottom: -29px;
 }
 .b-range .rangeslider__fill,
 .b-range .rangeslider__fill__bg {
@@ -191,7 +189,7 @@ body {
     width: 17px;
     height: 14px;
     position: absolute;
-    top: 50%;
+    top: 0;
     background: #29e;
     display: inline-block;
     z-index: 3;
@@ -206,15 +204,18 @@ body {
     margin-top: -3px;
 }
 .b-range__option {
+    box-sizing: border-box;
     width: 3px;
     height: 25px;
     background-image: url(images/range-option.png);
     background-position: left top;
     background-repeat: no-repeat;
     padding-top: 25px;
+    padding-right: 10px;
     font-size: 13px;
     font-weight: bold;
     line-height: 19px;
+    cursor: pointer;
 }
 .b-range__option:first-child {
     background-image: url(images/range-option-left.png);
@@ -224,6 +225,11 @@ body {
     flex: 1;
     background-image: url(images/range-option-left.png);
     background-position: right top;
+    text-align: right;
+    padding-right: 0;
+}
+.b-range__option:not(:first-child):not(:last-child) {
+    margin-left: -1px;
 }
 
 .b-textarea {
@@ -282,4 +288,12 @@ body {
 }
 .b-radio__input:focus + .b-radio__label {
     opacity: 0.62;
+}
+
+.b-footer {
+    margin-top: 56px;
+}
+
+.b-footer .b-field__input {
+    width: 206px;
 }
