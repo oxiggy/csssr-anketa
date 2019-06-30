@@ -1,0 +1,6 @@
+mixin RadioGroup(items)
+    .b-radio-group
+        each item, index in items
+            label.b-radio
+                input.b-radio__input(type='radio' name='plan' checked=item.checked)
+                span.b-radio__label !{item.label}

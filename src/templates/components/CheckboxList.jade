@@ -1,0 +1,7 @@
+mixin CheckboxList(items)
+    ul.b-checkbox-list
+        each item, index in items
+            li.b-checkbox-list__item
+                label.b-checkbox
+                    input.b-checkbox__input(type='checkbox' checked=item.checked)
+                    span.b-checkbox__label !{item.label}

@@ -1,0 +1,59 @@
+include ./components/Page.jade
+include ./components/Header.jade
+include ./components/Footer.jade
+include ./components/Main.jade
+include ./components/Section.jade
+include ./components/Field.jade
+include ./components/CheckboxList.jade
+include ./components/Range.jade
+include ./components/Textarea.jade
+include ./components/RadioGroup.jade
+
++Page()
+
+    +Header()
+        img.b-header__logo(src='./images/logo.png' alt='CSSSR')
+        img.b-header__stamp(src='./images/stamp.png' alt='СЕКРЕТНО. Заполнено собственноручно')
+        h1.b-header__title
+            img.b-header__title-image(src='./images/title.png' alt='Дело')
+
+    +Main()
+
+        +Section().b-section_person
+
+            +Field(fullname) Полное&nbsp;ФИО
+            +Field(birthday) Год&nbsp;рождения
+            +Field(location) Место&nbsp;жительства
+            +Field(skype) Скайп
+            +Field(email) Почта
+
+        +Section().b-section_checkboxes
+            h2.b-section__title Расскажите о&nbsp;себе чекбоксами
+            p.b-section__text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не&nbsp;означает, что у&nbsp;вас меньше шансов стать одним из&nbsp;наших товарищей. Это означает, что вы&nbsp;будете получать те&nbsp;задачи, с&nbsp;которыми гарантировано будете справляться.
+
+            +CheckboxList(skills)
+
+        +Section().b-section_level
+            h2.b-section__title Уровень владения JavaScript
+
+            +Range(level)
+                .b-range__options
+                    .b-range__option(data-value="0" style='width:19.5%') Не&nbsp;владею
+                    .b-range__option(data-value="19.5" style='width:29%') Использую готовые решения
+                    .b-range__option(data-value="48.5" style='width:25%') Использую готовые решения и&nbsp;умею их&nbsp;переделывать
+                    .b-range__option(data-value="100" style='') Пишу сложный JS с&nbsp;нуля
+
+        +Section().b-section_words
+            h2.b-section__title Расскажите о&nbsp;себе словами
+            p.b-section__text Напишите пару предложений, чем вас привлекла наша вакансия и&nbsp;чего вы&nbsp;ожидаете от&nbsp;работы в&nbsp;CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+
+            +Textarea(about)
+
+        +Section().b-section_plans
+            h2.b-section__title Какие у&nbsp;вас планы на&nbsp;будущее?
+            p.b-section__text Этот ответ ни&nbsp;на&nbsp;что не&nbsp;повлияет. Не&nbsp;беда, если в&nbsp;будущем ваши планы поменяются.
+
+            +RadioGroup(plans)
+
+    +Footer()
+        +Field(date) Дата&nbsp;заполнения
