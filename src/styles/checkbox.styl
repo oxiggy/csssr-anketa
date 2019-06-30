@@ -1,0 +1,36 @@
+.b-checkbox {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    height: 35px;
+    padding-top: 5px;
+
+    &__input {
+        _visually-hidden()
+    }
+    &__label {
+        position: relative;
+        padding-left: 28px;
+        line-height: 25px;
+        font-size: 21px;
+        font-weight: bold;
+        color: #000000;
+    }
+    &__label::before {
+        position: absolute;
+        left: 0;
+        top: -5px;
+        display: inline-block;
+        content: '';
+        width: 24px;
+        height: 28px;
+        background: url(./images/checkbox.png);
+    }
+
+    &__input:checked + &__label::before {
+        background: url(./images/checkbox-checked.png);
+    }
+    &__input:focus + &__label {
+        _focused()
+    }
+}

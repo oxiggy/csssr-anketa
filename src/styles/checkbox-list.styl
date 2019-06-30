@@ -1,0 +1,21 @@
+.b-checkbox-list {
+    display: block;
+    list-style: none;
+    margin: 22px 0 0;
+    padding: 0;
+    columns: 1;
+    column-gap: 16px;
+
+    @media screen and (min-width: 600px) {
+        columns: 2;
+    }
+
+    @media screen and (min-width: 1000px) {
+        columns: 3;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 100%;
+    }
+}

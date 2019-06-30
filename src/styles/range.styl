@@ -1,0 +1,76 @@
+.b-range {
+
+}
+.b-range__slider {
+    border-bottom: 4px solid transparent;
+    border-image: url(./images/range.png) 0 0 4 0/0 0 4px 0 repeat;
+}
+.b-range__input-container {
+    margin: 0 -7px;
+}
+.b-range .rangeslider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    height: 43px;
+    width: 100%;
+    margin-bottom: -29px;
+}
+.b-range .rangeslider__fill,
+.b-range .rangeslider__fill__bg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    z-index: 2;
+    will-change: width;
+}
+.b-range .rangeslider__handle {
+    will-change: width, height, top;
+    width: 17px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    background: #29e;
+    display: inline-block;
+    z-index: 3;
+    cursor: pointer;
+    background: url(images/range-handle.png);
+}
+.b-range__input {
+    _visually-hidden()
+}
+.b-range__input:focus + .rangeslider .rangeslider__handle {
+    _focused();
+}
+.b-range__options {
+    display: flex;
+    margin-top: -3px;
+}
+.b-range__option {
+    box-sizing: border-box;
+    width: 3px;
+    background-image: url(images/range-option.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 19px;
+    cursor: pointer;
+}
+.b-range__option:first-child {
+    background-image: url(images/range-option-left.png);
+    background-position: left top;
+}
+.b-range__option:last-child {
+    flex: 1;
+    background-image: url(images/range-option-left.png);
+    background-position: right top;
+    text-align: right;
+    padding-right: 0;
+}
+.b-range__option:not(:first-child):not(:last-child) {
+    margin-left: -1px;
+}

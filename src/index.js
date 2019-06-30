@@ -1,4 +1,4 @@
-require('./index.css')
+require('./index.styl')
 
 const autosize= require('autosize')
 autosize(document.querySelector('.b-textarea'))
