@@ -11,13 +11,13 @@ include ./components/RadioGroup.jade
 
 +Page()
 
-    +Header()
-        img.b-header__logo(src='./images/logo.png' alt='CSSSR')
-        img.b-header__stamp(src='./images/stamp.png' alt='СЕКРЕТНО. Заполнено собственноручно')
+    +Header.b-page__container()
+        img.b-header__logo(src='images/logo.png' alt='CSSSR')
+        img.b-header__stamp(src='images/stamp.png' alt='СЕКРЕТНО. Заполнено собственноручно')
         h1.b-header__title
-            img.b-header__title-image(src='./images/title.png' alt='Дело')
+            img.b-header__title-image(src='images/title.png' alt='Дело')
 
-    +Main()
+    +Main.b-page__container()
 
         +Section().b-section_person
 
@@ -55,5 +55,5 @@ include ./components/RadioGroup.jade
 
             +RadioGroup(plans)
 
-    +Footer()
+    +Footer.b-page__container()
         +Field(date) Дата&nbsp;заполнения
